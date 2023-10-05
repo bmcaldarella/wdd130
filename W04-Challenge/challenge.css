@@ -1,0 +1,54 @@
+body{
+   
+   background-color: pink;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.title{
+    color: aliceblue;
+    display: block;
+    text-align: center;
+    margin-top: 2em;
+    font-size: 50px;
+
+}
+
+.text{
+    color: aliceblue;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+
+
+}
+   
+ol {
+    list-style-type: decimal;
+    color: #000000; 
+    font-weight: bold;
+    margin: 5rem auto;
+    padding: 20px; 
+}
+li {
+    font-size: 16px; 
+    line-height: 1.6; 
+    margin-bottom: 10px; 
+}
+img{
+    max-width: 300px;
+}
+.quote{
+    color: aliceblue;
+    font-size: 40px;
+    max-width: 500px;
+}
+
+.name{
+    max-width: 400px;
+
+}
+.container{
+    display: grid;
+  
+    place-items: center;
+}
