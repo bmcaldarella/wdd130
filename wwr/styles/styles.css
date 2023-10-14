@@ -45,7 +45,15 @@ body {
 
 h2 {
     margin: 0;
-    color: #ffffff;
+    
+    
+    
+}
+
+.second{
+    margin: 0;
+    color: #e8e8e8;
+
 }
 header {
     background-color:#e07a5f; 
@@ -107,8 +115,8 @@ p{
     color: #000000;
 }
 h4{
-    background-color:#3d405b;
-    color: #e8e8e8;
+   color:#3d405b;
+   
 }
 
 footer {
@@ -145,7 +153,7 @@ footer p a:hover{
     font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
     font-size: 2em;
     margin-top: 10px;
-    background-color:#e07a5f;
+    color:#e07a5f;
     line-height: 1.5em;
 
 }
