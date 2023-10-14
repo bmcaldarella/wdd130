@@ -9,6 +9,7 @@ nav a {
     text-align: center;
     color: #fcfbfb;
     text-decoration: none;
+    padding: 35px;
 
 }
 
@@ -23,6 +24,7 @@ nav a {
 
 main section {
     text-align: center;
+    box-sizing: border-box;
 }
 
 #background {
@@ -42,7 +44,10 @@ main section {
 
 }
 body {
-    background-color:#eeeeee 
+    background-color:#eeeeee ;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -66,6 +71,10 @@ nav a:hover {
     text-decoration: none;
     background-color: #99cc99;
     text-decoration:none;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px ;
+
 }
 
 .book:hover, .join:hover {
@@ -81,12 +90,17 @@ p{
     background-color: #f4f1de0b;
 }
 .msg, h2{
-    background-color: #f7f7f7;
-    color: #000000; 
-}
+
+  background-color: #6f7364;
+  line-height: 1.5em;
+  color: #000000; 
+  padding: 35px;
+} 
+
 
 .home-title{
 background-color:#e07a5f;
+  line-height: 1.5em;
 }
 .book, .join{
     background-color: #f4f1de;
@@ -101,6 +115,8 @@ footer {
     background-color: #e07a5f; 
     color: #000000;  
     font-size: 1.2em;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer p a{
@@ -122,4 +138,38 @@ footer p a:hover{
 
 .icon {
     width: 80px;
+    padding-top: 10px;
+}
+
+.home-title {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+         
+
+#logo_link {
+    padding-top: 5px;
+}
+
+
+
+.msg p {
+    padding-bottom: 15px;
+}
+
+.footer .social img {
+    padding-top: 15px;
+}
+
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+
+.card-img{
+    border: 10px solid black;
+}
+
+main section img {
+    box-sizing: border-box;
 }
