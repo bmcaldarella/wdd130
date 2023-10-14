@@ -2,16 +2,9 @@
 #content{
     max-width:1600px;
     margin: 0 auto;
-}
-
-nav a {
-    text-align: center;
-    text-align: center;
-    color: #fcfbfb;
-    text-decoration: none;
-    padding: 35px;
 
 }
+
 
 #hero-msg h1,
 #hero-msg h4 {
@@ -50,6 +43,10 @@ body {
     padding: 0;
 }
 
+h2 {
+    margin: 0;
+    color: #ffffff;
+}
 header {
     background-color:#e07a5f; 
     text-decoration: none;
@@ -59,6 +56,12 @@ header {
 nav a {
     text-align: center;
     text-decoration:none;
+    text-align: center;
+    text-align: center;
+    color: #fcfbfb;
+    text-decoration: none;
+    padding: 35px;
+
 }
 nav a:hover {
     background-color:	#3d405b	;
@@ -71,6 +74,7 @@ nav a:hover {
     text-decoration: none;
     background-color: #99cc99;
     text-decoration:none;
+    font-size: 18px;
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px ;
@@ -87,21 +91,17 @@ nav a:hover {
     
 }
 p{
-    background-color: #f4f1de0b;
+    color: #e8e8e8;
 }
 .msg, h2{
 
-  background-color: #6f7364;
+  
   line-height: 1.5em;
   color: #000000; 
   padding: 35px;
 } 
 
 
-.home-title{
-background-color:#e07a5f;
-  line-height: 1.5em;
-}
 .book, .join{
     background-color: #f4f1de;
     color: #000000;
@@ -145,6 +145,9 @@ footer p a:hover{
     font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
     font-size: 2em;
     margin-top: 10px;
+    background-color:#e07a5f;
+    line-height: 1.5em;
+
 }
          
 
@@ -156,8 +159,18 @@ footer p a:hover{
 
 .msg p {
     padding-bottom: 15px;
+    font-size: 2em;
 }
 
+.msg {
+    background-color: #6f7364;
+    line-height: 1.5em;
+    padding: 35px;
+  }
+footer{
+    padding: 25px 50px;
+    margin-top: 200px;
+}
 .footer .social img {
     padding-top: 15px;
 }
@@ -167,9 +180,13 @@ footer p a:hover{
 }
 
 .card-img{
-    border: 10px solid black;
+    border: 10px solid  #6f7364;;
 }
 
 main section img {
     box-sizing: border-box;
+}
+
+footer .social img{
+    padding-top: 15px;
 }
