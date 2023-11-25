@@ -97,7 +97,7 @@ nav a:hover:before{
 .home {
   margin: 10px ;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
 
@@ -106,7 +106,7 @@ nav a:hover:before{
   grid-column: 2/4;
   width: 500px;
   position: relative;
-  left: 450px;
+  left: 265px;
   bottom: 120px;
 
 }
@@ -132,6 +132,7 @@ nav a:hover:before{
   display: inline-block; 
   grid-row: 2/1;
   grid-column: 1/4;
+  z-index: 1;
  
 
 
@@ -405,15 +406,17 @@ footer {
   
 
   @media only screen and (max-width: 574px) {
-
+    .icon{
+      display: none;
+    }
   .container{
-    margin: 260px 20px;
+    margin: 50% 5%;
 
   }
   .img-banner {
     width: 280px;
     bottom: 150px;
-    left: 60%;
+    left: 30%;
     
 
   }
@@ -422,6 +425,7 @@ footer {
     font-size: 20px;
     position: relative;
     top: 100px;
+    z-index: 1;
 
   }
   .name{
@@ -440,5 +444,4 @@ footer {
   .btn-hm{
     top:20px;
   }
-
   }

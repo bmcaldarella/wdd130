@@ -1,3 +1,17 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const menuIcon = document.getElementById('menu-icon');
+    const nav = document.querySelector('nav');
+
+    menuIcon.addEventListener('click', function () {
+      // Alternar la clase 'show' para controlar la visibilidad del menú
+      nav.classList.toggle('show');
+    });
+
+    // Ocultar el menú cuando se hace clic en un enlace (opcional)
+    nav.addEventListener('click', function () {
+      nav.classList.remove('show');
+    });
+  });
 
 document.addEventListener('DOMContentLoaded', function () {
   // Obtiene los elementos que deseas animar
