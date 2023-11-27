@@ -260,23 +260,29 @@ nav a:hover:before{
 .skills {
   display: block;
   padding: 40px;
-  background-image: linear-gradient(-225deg, #3410974b 20%, #671792c2 70%, #390aa66b 100%);
-  padding: 180px;
+  background-image: linear-gradient(-525deg, #0000004b 20%, #671792c2 70%, #390aa66b 100%);
+  padding: 80px;
   position: relative;
-  bottom:240px;
-
+  bottom:200px;
+  
+  padding: 100px;
+  border: 1 solid rgb(255, 255, 255);
 }
 .tl-skills{
   font-size: 50px;
   font-weight: bold;
-  color: rgb(141, 145, 148);
+  background: linear-gradient( 172deg, #DDE6E8, #647eff );
+  -webkit-background-clip: text;
+  color: transparent; 
+
+
   
 
 }
 
 .skl-div{
 text-align: center;
-padding: 5px;
+padding: 15px;
 position: relative;
 top: 50px;
 }
@@ -411,7 +417,7 @@ footer {
   
   
 
-  @media only screen and (max-width: 574px) {
+  @media only screen and (max-width: 600px) {
     .icon{
       display: none;
     }
@@ -450,4 +456,10 @@ footer {
   .btn-hm{
     top:20px;
   }
+  .skills{
+    position: relative;
+    bottom: 100px;
   }
+  }
+
+  
