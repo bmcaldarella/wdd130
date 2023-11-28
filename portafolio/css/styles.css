@@ -260,11 +260,10 @@ nav a:hover:before{
 .skills {
   display: block;
   padding: 40px;
-  background-image: linear-gradient(-525deg, #0000004b 20%, #671792c2 70%, #390aa66b 100%);
+  background-image: linear-gradient(-525deg, #0000004a 20%, #67179282 50%, #390aa643 100% );
   padding: 80px;
   position: relative;
-  bottom:200px;
-  
+  bottom:300px;
   padding: 100px;
   border: 1 solid rgb(255, 255, 255);
 }
