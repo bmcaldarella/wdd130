@@ -453,6 +453,7 @@ footer {
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.248);
   }
     
   .terminal-header {
