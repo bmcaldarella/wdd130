@@ -2,71 +2,8 @@ body{
     background-color: black;
 }
 
-nav{
-    width: 100%;
-    position: fixed;
-    top:20px;
-    text-align:center;
-    padding: 50px;
-    transition: background-color 0.3s ease; 
-    z-index: 1;
-    
-  }
-  nav a{
-    font-family: 'Oswald', sans-serif;
-    font-weight:500;
-    text-transform:uppercase;
-    text-decoration:none;
-    color:white;
-    margin:0 15px;
-    font-size:20px;
-    letter-spacing:1px;
-    position:relative;
-    display:inline-block;
-  }
-  nav a:before{
-    content:'';
-    position: absolute;
-    height: 5px;
-    background:rgb(132, 85, 246);
-    top:130%;
-    animation:out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
-  }
-  nav a:hover:before{
-    animation:in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
-  
-  }
-  
-  @keyframes in{
-    0%{
-      width: 0;
-      left:0;
-      right:auto;
-    }
-    100%{
-      left:0;
-      right:auto;
-      width: 100%;
-    }
-  }
-  @keyframes out{
-    0%{
-      width:100%;
-      left: auto;
-      right: 0;
-    }
-    100%{
-      width: 0;
-      left: auto;
-      right: 0;
-    }
-  }
-  
-  #menu-icon{
-    position: fixed;
-    z-index: 1;
-  }
-  
+
+
   .icon{
     width: 120px;
     position:relative;
@@ -77,10 +14,39 @@ nav{
     }
     
     .projects{
-        margin: 300px auto;
+        margin: 200px auto;
+        width: 700px;
+       
     }
 
     .img-pj{
-        width: 600px;
+        width: 400px;
         border-radius: 30px;
+    }
+
+
+    .projects-img > img{
+      width: 350px;
+      height: auto;
+    }
+
+    .projects-img {
+      display: grid;
+      grid-template-columns: 
+      repeat(
+        auto-fit,
+        minmax(150px,1fr)
+      );
+      gap:32px;
+      background-color: rgba(103, 92, 92, 0.094);
+      padding: 50px;
+      border-radius: 38px;
+    }
+    .svg-projects{
+      width: 35px;
+      height: 40px;
+      background-color: rgba(157, 0, 255, 0.281);
+      border-radius: 50%;
+      
+
     }

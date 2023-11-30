@@ -21,33 +21,21 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+const text = '&lt;<span class="color">p</span>&gt;Hi, I\'m Brandon, passionate about technology and web development. I love bringing ideas to life through code, where the only limit is imagination. Transforming concepts into solutions with a touch of creativity is what drives me every day. Let\'s go beyond the limits of the imaginable!&lt;/<span class=" color">p</span>&gt;';
 
+const textElement = document.getElementById('text');
+let index = 0;
 
-document.addEventListener("DOMContentLoaded", function () {
-    const textContainer = document.getElementById("text-container");
-    const textContent = textContainer.innerText;
-    textContainer.innerText = ""; 
-  
-    function typeWriter(text, i, fnCallback) {
-      if (i < text.length) {
-        textContainer.innerHTML += text.charAt(i);
-        i++;
-        setTimeout(function () {
-          typeWriter(text, i, fnCallback);
-        }, 40); 
-      } else if (typeof fnCallback == "function") {
-        setTimeout(fnCallback, 1500);
-      }
-    }
-  
-    function startTextAnimation() {
-      if (typeof textContent === "string") {
-        typeWriter(textContent, 0, function () {
-          
-        });
-      }
-    }
-  
-    startTextAnimation();
-  });
-  
+function typeWriter() {
+  if (index < text.length + 1) {
+    const newText = text.substring(0, index);
+    textElement.innerHTML = newText + (index % 2 ? '|' : '');
+    index++;
+    setTimeout(typeWriter, 25);
+  } else {
+    index = 0;
+    setTimeout(typeWriter, 4000);
+  }
+}
+
+typeWriter();
