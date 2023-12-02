@@ -39,3 +39,12 @@ function typeWriter() {
 }
 
 typeWriter();
+
+function changeImage(img, newSrc) {
+  img.setAttribute('data-original-src', img.src); 
+  img.src = newSrc; 
+}
+
+function restoreImage(img, originalSrc) {
+  img.src = img.getAttribute('data-original-src') || originalSrc; 
+}
