@@ -1,4 +1,3 @@
-/* Estilos para el contenedor principal */
 .cnt-container {
     margin: 0;
     padding: 0;
@@ -88,7 +87,6 @@ a {
     font-weight: bold;
 }
 
-/* Estilos para pantallas más pequeñas */
 @media screen and (max-width: 980px) {
     .email-svg {
         grid-column: 2/4;
@@ -100,8 +98,8 @@ a {
     }
 
     .social-svg {
-        left: 30%; /* Ajustar la posición del contenido social para pantallas más pequeñas */
-        bottom: 100px; /* Ajustar la posición del contenido social para pantallas más pequeñas */
+        left: 30%; 
+        bottom: 100px; 
     }
 
     
