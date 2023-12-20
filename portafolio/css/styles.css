@@ -272,10 +272,6 @@ nav a:hover:before{
   background: linear-gradient( 172deg, #DDE6E8, #647eff );
   -webkit-background-clip: text;
   color: transparent; 
-
-
-  
-
 }
 
 .skl-div{
@@ -453,7 +449,7 @@ footer {
     grid-row: 1/4;
     grid-column:2/2;
     position: relative;
-    left: 30px;
+    left: -105px;
     top: 20px;
     width: 400px;
   }
@@ -561,6 +557,15 @@ footer {
     scale: 0.7;
   }
   
+  .tl-skills{
+    font-size: 45px;
+    font-weight: bold;
+    background: linear-gradient( 172deg, #DDE6E8, #647eff );
+    -webkit-background-clip: text;
+    color: transparent; 
+    width: 400px;
+    
+  }
   
 }
   
@@ -643,5 +648,36 @@ footer {
     
     
     }
+    .tl-skills{
+      font-size: 35px;
+      width: 400px;
+      position: relative;
+      right:90px;
+      
+      
+    }
+    .terminal-loader {
+      width: 150%; 
+      max-width: 800px;
+      height: 400px;
+      margin: 0 auto;
+      position: relative;
+      right: 50px;
+    }
+    .skl-div {
+      display: flex;
+      justify-content: center; 
+      align-items: center; 
+      flex-wrap: wrap; 
+      max-width: 500px;
+      margin: auto;
+  }
+  
+  .skl-div > * {
+      flex: 0 0 calc(33.33% - 0.5px); 
+  
+  .svg-skills {
+      width: 90px;
+  }
   
   }
