@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     const menuIcon = document.getElementById('menu-icon');
     const nav = document.querySelector('nav');
@@ -10,7 +11,9 @@ document.addEventListener('DOMContentLoaded', function () {
       nav.classList.remove('show');
     });
   });
-
+  function redirectTo(page) {
+    window.location.href = page;
+}
 document.addEventListener('DOMContentLoaded', function () {
   const elementsToFadeIn = document.querySelectorAll('.home .img-banner, .home .hi, .home .name, .home .title-hm, .home .btn-hm');
 

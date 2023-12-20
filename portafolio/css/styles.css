@@ -104,6 +104,7 @@ nav a:hover:before{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+ 
 }
 
 .img-banner {
@@ -227,7 +228,7 @@ nav a:hover:before{
 
 .btn-pjs{
   position: relative;
-  bottom: 6px;
+  bottom: 3px;
   width: 120px;
   height: 50px;
   background-color: #000;
@@ -336,81 +337,6 @@ footer {
 
 
 
-  @media only screen and (max-width: 900px) {
-
-    .img-banner {
-      grid-row: 1/1;
-      grid-column: 1/2;
-      width: 500px;
-      position: relative;
-      left: 200px;
-      bottom: 120px;
-    
-    }
-    .container{
-      margin: 210px 60px;
-    }
-  
-    .img-banner {
-      width: 400px;
-    }
-    .hi{
-      font-size: 25px;
-    }
-    .name{
-      font-size: 120px;
-      position: relative;
-      bottom: 10px;
-    }
-    .title-hm{
-      position: relative;
-      bottom: 280px;
-    }
-    .btn-hm{
-      bottom: 130px;
-    }
-
-    #menu-icon {
-      display: block; 
-    }
-  
-    nav {
-      display: none; 
-      width: 100%;
-      position: fixed;
-      top: 60px;
-      right: 0;
-      text-align: center;
-      padding: 20px;
-      z-index: 1;
-     
-    }
-  
-    nav.show {
-      display: block;
-    }
-  
-    nav a {
-      display: block;
-      margin: 10px 0;
-      font-size: 18px;
-      color: white;
-      text-decoration: none;
-    }
-    nav a:before{
-     
-      background:transparent;
-      
-   
-    }
-    nav a:hover{
-      color:rgb(132, 85, 246);
-      background:transparent;
-    }
-    .skills{
-      padding: 50px;
-    }
-  }
   
   
   @keyframes blinkCursor {
@@ -510,52 +436,212 @@ footer {
   
   
 
-  @media only screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     .icon{
       display: none;
     }
-  .container{
-    margin: 50% 5%;
-
+  .home {
+    margin: 10px ;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-content: center;   
+   
   }
+  
   .img-banner {
-    width: 280px;
-    bottom: 150px;
-    left: 30%;
-    
-
+    grid-row: 1/4;
+    grid-column:2/2;
+    position: relative;
+    left: 30px;
+    top: 20px;
+    width: 400px;
   }
-
+  
+  
   .hi{
-    font-size: 20px;
-    position: relative;
-    top: 100px;
+    font-weight: bold;
+    color: rgba(230, 229, 229, 0.868);
+    width: 360px;
+    grid-row: 2/1;
+    grid-column: 1/2;
+    margin: 15px;
     z-index: 1;
-
+    font-size: 40px;
+    position: relative;
+    left: 100px;
+    top: 60px;
+    
   }
+  
   .name{
-    font-size: 80px;
-    position: relative;
-    top:90px;
+   font-size: 100px;
+   position: relative;
+   left: 90px;
+   top: 50px;
   }
-
+  
   .title-hm{
+    grid-row: 1/1;
+    grid-column: 1/1;
     position: relative;
-    bottom:90px;
-
-
+    top: 350px;
+    left:110px;
+    font-weight: bold;
+    color:rgba(252, 252, 252, 0.836);
+    
+  
   }
-
+  
   .btn-hm{
-    top:20px;
-  }
-  .skills{
+    display: flex;
+    gap:30px;
+    grid-row: 4/4;
+    grid-column: 1/4;
+    z-index: 1;
     position: relative;
-    bottom: 100px;
+    bottom: 130px;
+    left: 100px;
+  
+  
   }
-  .terminal-loader {
-    font-size: 15px;
+  
+  .btn-ctm {
+    position: relative;
+    width: 120px;
+    height: 40px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 8px;
+    cursor: pointer;
   }
+  
+  .btn-ctm::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -4px;
+    top: -1px;
+    margin: auto;
+    width: 128px;
+    height: 48px;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+    z-index: -10;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .btn-ctm::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+  }
+  
+  .btn-ctm:hover::after {
+    filter: blur(30px);
+  }
+  
+  .btn-ctm:hover::before {
+    transform: rotate(-180deg);
+  }
+  
+  .btn-ctm:active::before {
+    scale: 0.7;
+  }
+  
+  
+}
+  
+  @media screen and (max-width: 480px) {
+    .home {
+      margin: 10px ;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      justify-content: center; 
+      padding: 40px;
+      
+     
+    }
+    .img-banner {
+      grid-row: 1/1;
+      grid-column:1/2;
+      width: 300px;
+      position: absolute;
+      left: 50px;
+      top: 90px;
+      width: 340px;
+    
+    
+    }
+    .hi{
+      font-weight: bold;
+      color: rgba(230, 229, 229, 0.868);
+      width: 270px;
+      grid-row: 1/1;
+      grid-column: 1/1;
+      margin: 5px;
+      z-index: 1;
+      font-size: 5vw;
+      position: relative;
+      top: auto;
+      left: auto;
+    
+      
+    }
+    
+    .name{
+      font-size: 70px;
+      font-weight: bold;
+      background-image: linear-gradient(-20deg, #b721ff 30%, #21d4fd 100%);
+      -webkit-background-clip: text;
+      color: transparent; 
+      display: inline-block; 
+      grid-row: 2/1;
+      grid-column: 1/4;
+      z-index: 1;
+      font-size: 15vw;
+      width: auto;
+      left: 0;
+      top: auto;
+    }
+  
+  
+  
+    .title-hm {
+      font-size: 20px;
+      margin-top: 90px;
+      color: rgba(255, 255, 255, 0.93);
+      font-weight: bold;
+      position: relative;
+      top: 120px;
+      left:7px;
+  
 
+    }
+    .btn-hm{
+      display: flex;
+      gap:30px;
+      grid-row: 4/4;
+      grid-column: 1/4;
+      z-index: 1;
+      position: relative;
+      bottom:50px;
+      left: 10px;
+    
+    
+    }
+  
   }
-
