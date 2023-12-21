@@ -1,5 +1,23 @@
 
 document.addEventListener('DOMContentLoaded', function () {
+      const menuIcon = document.getElementById('menu-icon');
+      
+      // Función para manejar el evento de scroll
+      function handleScroll() {
+        if (window.scrollY > 50) { // Puedes ajustar este valor según sea necesario
+          menuIcon.style.opacity = '0';
+        } else {
+          menuIcon.style.opacity = '1';
+        }
+      }
+
+      // Agrega un evento de scroll al documento
+      window.addEventListener('scroll', handleScroll);
+
+      // Llama a la función handleScroll al cargar la página
+      handleScroll();
+    });
+document.addEventListener('DOMContentLoaded', function () {
     const menuIcon = document.getElementById('menu-icon');
     const nav = document.querySelector('nav');
 

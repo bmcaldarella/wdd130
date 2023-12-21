@@ -568,6 +568,13 @@ footer {
 }
   
   @media screen and (max-width: 480px) {
+
+    nav{
+      display: none;
+    }
+    .icon{
+      display: none;
+    }
     .home {
       margin: 10px ;
       display: grid;
