@@ -265,6 +265,7 @@ nav a:hover:before{
   bottom:300px;
   padding: 100px;
   border: 1 solid rgb(255, 255, 255);
+  width: auto;
 }
 .tl-skills{
   font-size: 50px;
@@ -583,9 +584,9 @@ footer {
     .img-banner {
       grid-row: 1/1;
       grid-column:1/2;
-      width: 300px;
+      width: 200px;
       position: absolute;
-      left: 50px;
+      left: 20px;
       top: 90px;
       width: 340px;
     
@@ -643,7 +644,7 @@ footer {
       grid-column: 1/4;
       z-index: 1;
       position: relative;
-      bottom:50px;
+      bottom:10px;
       left: 10px;
     
     
@@ -680,4 +681,5 @@ footer {
       width: 90px;
   }
   
+}
   }
