@@ -655,28 +655,39 @@ footer {
     }
     .tl-skills{
       font-size: 35px;
-      width: 400px;
+      text-align: left;
       position: relative;
-      right:90px;
+      right: 50px;
+
       
       
     }
+
+    .skills {
+      display: block;
+      background-image: linear-gradient(-525deg, #0000004a 20%, #67179282 50%, #390aa643 100%);
+      position: relative;
+      bottom: 300px;
+      width: 80%; 
+    }    
+
     .terminal-loader {
-      width: 150%; 
-      max-width: 800px;
-      height: 500px;
+      width: 100%; 
+      max-width: 600px;
+      height: 540px;
       margin: 0 auto;
       position: relative;
-      right: 50px;
+      right: 60px;
       
     }
     .skl-div {
       display: flex;
-      justify-content: center; 
+      justify-content: start; 
       align-items: center; 
       flex-wrap: wrap; 
-      max-width: 500px;
       margin: auto;
+      position: relative;
+      right: 40px;
   }
   
   .skl-div > * {
@@ -687,4 +698,5 @@ footer {
   }
   
 }
+
   }
