@@ -607,7 +607,7 @@ footer {
       font-size: 5vw;
       position: relative;
       top: auto;
-      left: auto;
+      left: 20px;
     
       
     }
@@ -624,7 +624,7 @@ footer {
       z-index: 1;
       font-size: 15vw;
       width: auto;
-      left: 0;
+      left: 20px;
       top: auto;
     }
   
@@ -637,7 +637,7 @@ footer {
       font-weight: bold;
       position: relative;
       top: 120px;
-      left:7px;
+      left:20px;
   
 
     }
@@ -649,7 +649,7 @@ footer {
       z-index: 1;
       position: relative;
       bottom:10px;
-      left: 10px;
+      left: 30px;
     
     
     }
