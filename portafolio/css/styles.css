@@ -674,7 +674,7 @@ footer {
     .terminal-loader {
       width: 100%; 
       max-width: 600px;
-      height: 540px;
+      height: 400px;
       margin: 0 auto;
       position: relative;
       right: 60px;
