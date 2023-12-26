@@ -664,10 +664,11 @@ footer {
     .terminal-loader {
       width: 150%; 
       max-width: 800px;
-      height: 400px;
+      height: 500px;
       margin: 0 auto;
       position: relative;
       right: 50px;
+      
     }
     .skl-div {
       display: flex;
