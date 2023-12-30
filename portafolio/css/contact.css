@@ -20,7 +20,7 @@
     background-image: linear-gradient(-20deg, #b921ff5d 0%, #790dfc 100%);
     -webkit-background-clip: text;
     color: transparent;
-    font-size: 50px;
+    font-size: 70px;
 }
 
 .second {
@@ -28,10 +28,10 @@
     background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
     -webkit-background-clip: text;
     color: transparent;
-    font-size: 90px;
+    font-size: 100px;
     position: relative;
     bottom: 60px;
-    gap: 40px;
+    gap: 50px;
 }
 
 .social-container {
@@ -55,6 +55,7 @@
     bottom: 200px;
     right: 150px;
     text-align: center;
+   
 }
 
 .svg-cnt {
@@ -87,7 +88,8 @@ a {
     font-weight: bold;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1200px ) {
+
     .email-svg {
         grid-column: 2/4;
         grid-row: 4/4;
@@ -105,18 +107,79 @@ a {
     
     .social-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 2fr));
+        grid-template-columns: repeat(auto-fit, minmax(10px, 2fr));
     }
     
 
     .emv {
-        font-size: 50px;
+        font-size: 40px;
+        
     }
     .sm-svg{
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .svg-cnt{
         margin-top:10px;
+        
+    }
+    .email-svg{
+        position: relative;
+        top :-420px;
+        width: 400px;
+        left: 60px;
+    }
+    .tle-cnt{
+        font-size: 60px;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .social-svg{
+       width: 300px;
+
+    }
+    .sm-svg{
+        font-size: 25px;
+    }
+    .tle-cnt{
+        position:relative;
+        bottom: 160px;
+    }
+    .second{
+        position:relative;
+        bottom: 200px;
+        margin-bottom: 100px;
+
+    }
+    .social-container{
+      
+      
+        position: relative;
+        bottom: 250px;
+    }
+
+    .emv{
+        font-size:40px;
+        width: 340px;
+        text-align: center;
+         position: relative;
+         left: 70px;
+    }
+
+    .sm-svgs{
+        font-size: 20px;
+        position: relative;
+        top: 40px;
+        text-align: center;
+        left: 25px;
+    }
+   .email-svg{
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+    left: -170px;
+   }
+}
+
+

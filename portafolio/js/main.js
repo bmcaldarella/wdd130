@@ -69,3 +69,15 @@ function changeImage(img, newSrc) {
 function restoreImage(img, originalSrc) {
   img.src = img.getAttribute('data-original-src') || originalSrc; 
 }
+
+
+function toggleCertificate() {
+  var certificateDiv = document.getElementById('doc-certificate');
+  
+  // Toggle the display property based on the current state
+  if (certificateDiv.style.display === 'none' || certificateDiv.style.display === '') {
+    certificateDiv.style.display = 'flex';
+  } else {
+    certificateDiv.style.display = 'none';
+  }
+}

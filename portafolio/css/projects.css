@@ -100,7 +100,16 @@ nav a:before{
 
       
     }
-
+   
+      .tls-skills{
+        text-align: center;
+        position: relative;
+        right: 15px;        
+       
+        
+      }
+      
+    
     
     .project>img {
       
@@ -267,12 +276,10 @@ nav a:before{
       
 
       .projects{
-        
         margin: 0 auto;
         position: relative;
         top: 10px;
-        
-
+      
       }
 
       .btn-git:hover{
@@ -280,5 +287,16 @@ nav a:before{
 
 
       }
+         
+      .tls-skills{
+        text-align: center;
+        position: relative;
+        right: -17px;    
+        top: -250px;    
+       font-size: 35px;
+        
+      }
+      
+
       
     }
