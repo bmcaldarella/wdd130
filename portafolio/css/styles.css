@@ -275,8 +275,12 @@ nav a:hover:before{
   color: transparent; 
 }
 .skl-title{
-  font-size: 55px;
+  font-size: 65px;
   text-align: center;
+  margin-top: 300px;
+  font-weight: bold;
+
+
 
 }
 
@@ -295,6 +299,15 @@ top: 50px;
   transform: scale(1.3);
 }
 
+.tls-skills{
+  font-size: 55px;
+  font-weight: bold;
+  background: linear-gradient( 172deg, #DDE6E8, #647eff );
+  -webkit-background-clip: text;
+  color: transparent; 
+
+
+}
 
 /*Footer*/
 
@@ -570,35 +583,103 @@ footer {
   }
   
 }
+
+@media screen and (max-width: 974px ) {
+
+.img-banner{
+  position: relative;
+  left:120px;
+}
+}
+
+@media screen and (max-width: 768px ) {
+  .container{
+    
+    display: grid;
+    width: 520px;
+  }
+  .img-banner{
+    display: none;
+
+  }
+  .hi{
+    font-size: 20px;
+    position: relative;
+    left: -30px;
+  }
+  .name,.title-hm{
+    position: relative;
+    left:-40px;
+  }
+  .btn-hm{
+    position: relative;
+    left:-30px;
+    top:2px;
+
+  }
+  
+  .skills{
+    margin-top: 500px;
+  }
+
+  .terminal-loader{
+    width: 120%;
+   position: relative;
+   right: 35px;
+  }
+  .tls-skills{
+    position: relative;
+    bottom: 10px;
+    font-size: 55px;
+    font-weight: bold;
+    background: linear-gradient( 172deg, #DDE6E8, #647eff );
+    -webkit-background-clip: text;
+    color: transparent; 
+
+
+  }
+
+  .skl-title{
+    margin-top: 280px;
+  }
+  }
+
+
   
   @media screen and (max-width: 480px) {
-    body{
-      max-width:nonex;
-    }
 
     nav{
       display: none;
     }
+    .home{
+      position: relative;
+      left: -100px;
+      width: 300px;
+
+    }
+    .container{
+      display: grid;
+      width:auto;
+     
+    }
+  
+    .img-banner{
+      display: block;
+      position: relative;
+      left: 15px;
+  
+    }
+  
     .icon{
       display: none;
-    }
-    .home {
-      margin: 10px ;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 30px;
-      justify-content: center; 
-      padding: 40px;
-      
-     
     }
     .img-banner {
       grid-row: 1/1;
       grid-column:1/2;
       width: 200px;
       position: absolute;
-      left: 45px;
-      top: 90px;
+      left: 80px;
+      top: -140px;
       width: 340px;
     
     
@@ -614,7 +695,7 @@ footer {
       font-size: 5vw;
       position: relative;
       top: auto;
-      left: 20px;
+      left: 70px;
     
       
     }
@@ -631,7 +712,7 @@ footer {
       z-index: 1;
       font-size: 15vw;
       width: auto;
-      left: 20px;
+      left: 70px;
       top: auto;
     }
   
@@ -644,7 +725,8 @@ footer {
       font-weight: bold;
       position: relative;
       top: 120px;
-      left:20px;
+      left: 70px;
+
   
 
     }
@@ -656,62 +738,66 @@ footer {
       z-index: 1;
       position: relative;
       bottom:10px;
-      left: 30px;
+      left: 75px;
     
     
     }
     .tl-skills{
-      font-size: 35px;
-      text-align: left;
+      text-align: center;
       position: relative;
-      right: 170px;
+      right: 115px;
+      
+     
+      
+      
+      
 
-      
-      
     }
 
     .skills {
       display: block;
       position: relative;
-      bottom: 200px;
-      width: 80%; 
+      bottom: 500px;
+      width: 60%; 
       background-image: linear-gradient(-525deg, #00000086 20%, #67179284 50%, #390aa60c 100% );
-
     }    
     
 
     .terminal-loader {
-      width: 100%; 
-      max-width: 600px;
+      
+      width: 140%;
       height: 400px;
       margin: 0 auto;
       position: relative;
-      right: 60px;
-      
+      right: 70px;
+     
     }
     .skl-div {
       display: flex;
       justify-content: start; 
       align-items: center; 
       flex-wrap: wrap; 
-      margin:0 auto;
+      margin:0px auto;
       position: relative;
-      right: 65px;
+      right: 105px;
+      width: 350px;
   }
   .svg-skills:hover{
     transform: scale(1.3);
+    
   }
   .skl-div > * {
       flex: 0 0 calc(33.33% - 0.5px); 
   
-  .svg-skills {
-      width: 90px;
-  }
   
 }
+
 .svg-skills {
-  width: 90px;
-  margin-top: 90px;
+  margin-top: 50px;
+  opacity: 90%;
+  position: relative;
+  bottom: 70px;
+
 }
 
 
@@ -721,9 +807,18 @@ footer {
   font-weight: bold;
   color: #ffffffda;
   position: relative;
-  right: 70px;
-  top: 140px;
+  right: 17px;
+  top: -20px;
 
 }
 
+.tls-skills{
+  font-size: 45px;
+  position: absolute;
+  top: -450px;
+  left: -10px;
+  width: 380px;
+  padding: 20px;
+  
+}
   }
